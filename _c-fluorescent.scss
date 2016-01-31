@@ -1,0 +1,18 @@
+// fluorescent color map
+// by Andrew
+
+$c-fluorescent: (
+	'red': #e10277,
+	'blue': #007ac0,
+	'orange': #f36446,
+	'pink': #ee71ab,
+	'purple': #a44599,
+	'yellow': #ede70b,
+	'magenta': #f15d99,
+	'green': #00b25a
+);
+
+
+@function c-fluorescent($color) {
+  @return map-get($c-fluorescent, $color);
+}
